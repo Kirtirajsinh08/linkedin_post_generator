@@ -44,44 +44,60 @@ EchoPost/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/EchoPost.git
-   cd EchoPost
+   git clone https://github.com/your-username/linkedin_post_generator.git
+   cd linkedin_post_generator
 
 2 **Create and activate a virtual environment**
+
 python -m venv .venv
+
 source .venv/bin/activate   # Linux/Mac
+
 .venv\Scripts\activate      # Windows
 
 3 **Install dependencies**
+
 pip install -r requirements.txt
 
 4 **Set environment variables**
+
 - Create a .env file in the root directory:
+- 
 GROQ_API_KEY=your_api_key_here
+
 - Add any other required keys (e.g., OpenAI API key if you switch models).
 
 ▶️ Usage
+
 1. **Preprocess raw posts**
 python preprocess.py
+
 This extracts metadata (line count, language, tags) from data/raw_posts.json
+
 and saves it to data/processed_posts.json.
 
-2. **Generate a LinkedIn Post**
+3. **Generate a LinkedIn Post**
 python post_generator.py
+
 Inside post_generator.py, you can try:
+
 print(GeneratePost("Self Improvement", "Short", "English"))
 
-3. **Run the main script**
+5. **Run the main script**
 python main.py
 
 🛠️ Tech Stack
 Python 3.10+
+
 LangChain
+
 Groq LLM(or OpenAI-compatible API)
+
 Pandas for data processing
 
 🤝 Contributing
 Contributions are welcome!
+
 Feel free to fork this repo, create a branch, and submit a pull request.
 
 📜 License
@@ -89,4 +105,5 @@ This project is licensed under the MIT License.
 
 ✨ Acknowledgements
 Inspired by the need for creators to simplify LinkedIn content writing.
+
 Built with ❤️ using LangChain + Groq.
