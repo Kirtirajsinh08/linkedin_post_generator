@@ -18,15 +18,25 @@ It analyzes example posts, extracts metadata, and generates engaging LinkedIn po
 ## 📂 Project Structure
 EchoPost/
 │── .venv/ # Virtual environment
+
 │── pycache/ # Python cache files
+
 │── data/ # Raw and processed post data (JSON)
+
 │── .env # Environment variables (API keys etc.)
+
 │── few_shot.py # Few-shot examples handler
+
 │── llm_helper.py # LLM configuration & initialization
+
 │── main.py # Entry point for the project
+
 │── post_generator.py # Core LinkedIn post generator
+
 │── preprocess.py # Preprocess raw LinkedIn posts
+
 │── requirements.txt # Project dependencies
+
 
 ---
 
